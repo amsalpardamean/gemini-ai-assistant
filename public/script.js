@@ -5,50 +5,61 @@ const chatBox = document.getElementById('chat-box');
 const chatToggle = document.getElementById('chat-toggle');
 const chatWidget = document.getElementById('chat-widget');
 const closeChat = document.getElementById('close-chat');
-
 const quickBox = document.getElementById("quickQuestions");
-
+let lastMessageId = null;
 let conversationHistory = [];
 let lastUserMessage = "";
 
-chatToggle.addEventListener('click', () => {
+function toggleChat() {
   chatWidget.classList.toggle('hidden');
-});
+}
 
-closeChat.addEventListener('click', () => {
+chatToggle?.addEventListener('click', toggleChat);
+closeChat?.addEventListener('click', () => {
   chatWidget.classList.add('hidden');
 });
 
-function appendMessage(sender, text, isTemporary = false, showRetry = false) {
+function appendMessage(sender, text, isTemporary = false, showRetry = false, id = null) {
   const msg = document.createElement('div');
   msg.classList.add('message', sender);
+
+  msg.dataset.id = id || Date.now();
+  lastMessageId = msg.dataset.id; 
+
   msg.innerHTML = text;
 
   if (showRetry) {
     const retryBtn = document.createElement('button');
     retryBtn.textContent = "Coba lagi 🔄";
     retryBtn.className = "retry-btn";
-    retryBtn.onclick = retryLastMessage;
+
+    retryBtn.onclick = () => {
+      if (msg.dataset.id !== lastMessageId) return;
+      retryLastMessage();
+    };
+
     msg.appendChild(retryBtn);
   }
 
   chatBox.appendChild(msg);
   chatBox.scrollTop = chatBox.scrollHeight;
 
-  if (isTemporary) return msg;
-  return null;
+  return isTemporary ? msg : null;
 }
 
 function updateMessage(el, text, showRetry = false) {
   if (!el) return;
+  el.innerHTML = "";
 
-  el.innerHTML = text;
+  const msgText = document.createElement("div");
+  msgText.innerHTML = text;
+  el.appendChild(msgText);
 
   if (showRetry) {
-    const retryBtn = document.createElement('button');
+    const retryBtn = document.createElement("button");
     retryBtn.textContent = "Coba lagi 🔄";
     retryBtn.className = "retry-btn";
-    retryBtn.onclick = retryLastMessage;
+    retryBtn.onclick = () => retryLastMessage(el);
     el.appendChild(retryBtn);
   }
 
@@ -62,15 +73,13 @@ bubbles.forEach(bubble => {
     const question = bubble.innerText.trim();
 
     input.value = question;
-
-    const qq = document.getElementById("quickQuestions");
-    if (qq) qq.style.display = "none";
+    if (quickBox) quickBox.style.display = "none";
 
     form.dispatchEvent(new Event("submit", { cancelable: true }));
   });
 });
 
-form.addEventListener('submit', async function (e) {
+form.addEventListener('submit', async (e) => {
   e.preventDefault();
 
   const userMessage = input.value.trim();
@@ -85,13 +94,16 @@ form.addEventListener('submit', async function (e) {
 
   await sendToServer(userMessage);
 });
+async function sendToServer(message) {
 
+  const messageId = Date.now();
 
-async function sendToServer(message){
   const thinking = appendMessage(
     'bot',
     '🤖 Lagi mikir sebentar ya...',
-    true
+    true,
+    false,
+    messageId
   );
 
   try {
@@ -116,15 +128,22 @@ async function sendToServer(message){
     updateMessage(
       thinking,
       `😢 Aduh koneksi lagi bermasalah.<br>
-       Tenang ya, kadang server juga butuh kopi ☕<br>
-       Yuk coba kirim lagi!`,
+      Tenang ya, kadang server juga butuh kopi ☕<br>
+      Yuk coba kirim lagi!`,
       true
     );
   }
 }
 
-function retryLastMessage(){
-  if(!lastUserMessage) return;
+function retryLastMessage() {
+  if (!lastUserMessage) return;
+  const messages = document.querySelectorAll(".message.bot");
+  const lastBot = messages[messages.length - 1];
+
+  if (lastBot) {
+    lastBot.remove();
+  }
+
   sendToServer(lastUserMessage);
 }
 
