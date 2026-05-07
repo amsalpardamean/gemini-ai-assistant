@@ -1,0 +1,5 @@
+/node_modules
+backup.js
+.env
+package-lock.json
+/file
