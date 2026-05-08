@@ -8,18 +8,18 @@ Audio → text / AI processing
 Production-ready base structure for extensibility
 
 ### 📌 Features
-✨ Text generation endpoint
-🎤 Audio to text / AI processing endpoint
-📦 Simple Express REST API
-🔐 Environment-based configuration
-🧩 Ready for web / chatbot integration
+✨ Text generation endpoint<br>
+🎤 Audio to text / AI processing endpoint<br>
+📦 Simple Express REST API<br>
+🔐 Environment-based configuration<br>
+🧩 Ready for web / chatbot integration<br>
 
 ### 🏗️ Tech Stack
-Node.js — Runtime
-Express.js — REST API server
-Multer — File upload handling
-Google Generative AI SDK — Gemini integration
-dotenv — Environment configuration
+Node.js — Runtime<br>
+Express.js — REST API server<br>
+Multer — File upload handling<br>
+Google Generative AI SDK — Gemini integration<br>
+dotenv — Environment configuration<br>
 
 ### ⚙️ Installation
 1️⃣ Clone repository
