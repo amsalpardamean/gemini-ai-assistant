@@ -23,16 +23,16 @@ dotenv — Environment configuration<br>
 
 ### ⚙️ Installation
 1️⃣ Clone repository
-git clone https://github.com/amsalpardamean/gemini-ai-assistant.git
-cd gemini-ai-assistant
+git clone https://github.com/amsalpardamean/gemini-ai-assistant.git<br>
+cd gemini-ai-assistant<br>
 
 2️⃣ Install dependencies
 npm install
 
 3️⃣ Setup environment
-Create .env file:
-GEMINI_API_KEY=your_api_key_here
-
+Create .env file:<br>
+GEMINI_API_KEY=your_api_key_here<br>
+<br>
 ▶️ Run Server
 node index.js
 
