@@ -7,6 +7,8 @@ Text generation from prompts<br>
 Audio → text / AI processing<br>
 Production-ready base structure for extensibility<br>
 
+### 🔗 Live Demo: https://gemini-ai-assistant-sigma.vercel.app/
+
 ### 📌 Features
 ✨ Text generation endpoint<br>
 🎤 Audio to text / AI processing endpoint<br>
