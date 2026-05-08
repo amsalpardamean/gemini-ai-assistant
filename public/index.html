@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Coding School</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Coding School</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav class="navbar">
-  <div class="logo">AI Coding School</div>
-  <ul>
+  <div class="logo">🤖 AI Coding School</div>
+  <ul class="menu-pill">
     <li><a href="#top">Home</a></li>
+    <li><a href="#features">Features</a></li>
     <li><a href="#courses">Courses</a></li>
-    <li><a href="#ai">AI Bootcamp</a></li>
+    <li><a href="#career">Career Path</a></li>
+    <li><a href="#testimonial">Success Stories</a></li>
     <li><a href="#contact">Contact</a></li>
-</ul>
+  </ul>
 </nav>
 
 <section class="hero">
@@ -23,73 +28,280 @@
     <h1>Become AI Engineer & Software Developer 🚀</h1>
     <p>Belajar coding dari nol sampai siap kerja di industri teknologi & AI.</p>
     <div class="hero-btns">
-      <button class="btn-primary">Start Learning</button>
-      <button class="btn-secondary">View Courses</button>
+      <button class="btn-primary" id="openModal">Start Learning</button>
+      <a href="#courses" class="btn-secondary">View Courses</a>
     </div>
   </div>
 </section>
 
 <section class="slider">
   <div class="slide-track">
-    <div class="slide react">React</div>
-    <div class="slide ai">AI / ML</div>
-    <div class="slide docker">Docker</div>
-    <div class="slide cloud">Cloud</div>
+    <div class="slide software">Software Development</div>
+    <div class="slide ai">Artificial Intelligence / Machine Learning</div>
+    <div class="slide data">Data Science</div>
     <div class="slide cyber">Cyber Security</div>
-    <div class="slide react">React</div>
-    <div class="slide ai">AI / ML</div>
-    <div class="slide docker">Docker</div>
-    <div class="slide cloud">Cloud</div>
+    <div class="slide cloud">Cloud Computing</div>
+    <div class="slide uiux">UI/UX Design</div>
+    <div class="slide infra">Infrastructure</div>
+    <div class="slide blockchain">Blockchain</div>
+    <div class="slide iot">Internet of Things</div>
+    <div class="slide arvr">AR / VR</div>
+    <div class="slide software">Software Development</div>
+    <div class="slide ai">Artificial Intelligence / Machine Learning</div>
+    <div class="slide data">Data Science</div>
     <div class="slide cyber">Cyber Security</div>
+    <div class="slide cloud">Cloud Computing</div>
+    <div class="slide uiux">UI/UX Design</div>
+    <div class="slide infra">Infrastructure</div>
+    <div class="slide blockchain">Blockchain</div>
+    <div class="slide iot">Internet of Things</div>
+    <div class="slide arvr">AR / VR</div>
   </div>
 </section>
 
-<section class="features">
-  <h2>Why Choose Us</h2>
+<section id="features" class="features">
+  <div class="features-header">
+    <h2>Why Choose Us</h2>
+    <p>Kurikulum dirancang untuk membawa kamu dari pemula → siap kerja di dunia tech & AI</p>
+  </div>
   <div class="feature-grid">
-    <div class="card">🎯 Career Focused</div>
-    <div class="card">👨‍💻 Real Projects</div>
-    <div class="card">🤖 AI First Curriculum</div>
-    <div class="card">💼 Job Assistance</div>
+    <div class="feature-card">
+      <div class="icon">🎯</div>
+      <h3>Career Focused</h3>
+      <p>Kurikulum dirancang sesuai kebutuhan industri global.</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">👨‍💻</div>
+      <h3>Real Projects</h3>
+      <p>Bangun portfolio nyata yang siap ditunjukkan ke recruiter.</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">🤖</div>
+      <h3>AI First Curriculum</h3>
+      <p>Belajar teknologi AI modern yang dipakai perusahaan saat ini.</p>
+    </div>
+    <div class="feature-card">
+      <div class="icon">💼</div>
+      <h3>Job Assistance</h3>
+      <p>Bimbingan CV, interview, hingga strategi dapat kerja.</p>
+    </div>
   </div>
 </section>
 
 <section class="courses" id="courses">
-  <h2>Popular Courses</h2>
+  <div class="courses-header">
+    <h2>🔥 Popular Courses</h2>
+    <p>Pilih jalur belajar yang sesuai dengan karier impianmu</p>
+  </div>
+
   <div class="course-grid">
     <div class="course-card">
+      <span class="badge">Most Popular</span>
       <h3>AI Engineer Bootcamp</h3>
-      <p>Machine Learning, LLM, Computer Vision</p>
+      <p class="desc">Machine Learning • LLM • Computer Vision</p>
+      <div class="course-meta">
+        <span>⏱ 6 Months</span>
+        <span>📈 Intermediate</span>
+      </div>
+      <button class="course-btn">View Curriculum →</button>
     </div>
     <div class="course-card">
+      <span class="badge">Career Path</span>
       <h3>Fullstack Web Developer</h3>
-      <p>React, Node.js, Database, API</p>
+      <p class="desc">React • Node.js • Database • API</p>
+      <div class="course-meta">
+        <span>⏱ 5 Months</span>
+        <span>📈 Beginner</span>
+      </div>
+      <button class="course-btn">View Curriculum →</button>
     </div>
     <div class="course-card">
+      <span class="badge">High Demand</span>
       <h3>Data Science</h3>
-      <p>Python, Pandas, Visualization</p>
+      <p class="desc">Python • Pandas • Visualization</p>
+      <div class="course-meta">
+        <span>⏱ 4 Months</span>
+        <span>📈 Beginner</span>
+      </div>
+      <button class="course-btn">View Curriculum →</button>
     </div>
     <div class="course-card">
+      <span class="badge">Hot Skill</span>
       <h3>Mobile Developer</h3>
-      <p>React Native & Flutter</p>
+      <p class="desc">React Native • Flutter</p>
+      <div class="course-meta">
+        <span>⏱ 4 Months</span>
+        <span>📈 Beginner</span>
+      </div>
+      <button class="course-btn">View Curriculum →</button>
     </div>
   </div>
 </section>
 
-<section class="testimonial">
-  <h2>Success Story</h2>
-  <p>"Dari nol sampai kerja dalam 6 bulan!" ⭐⭐⭐⭐⭐</p>
+<section id="career" class="career">
+  <div class="career-container">
+    <div class="career-header">
+      <h2>🧭 Your Career Path</h2>
+      <p>Dari pemula sampai siap kerja di industri teknologi & AI</p>
+    </div>
+    <div class="career-steps">
+
+      <div class="career-step">
+        <div class="step-number">01</div>
+        <h3>Foundation</h3>
+        <p>
+          Belajar dasar programming, logic, dan tools modern 
+          yang dipakai di industri.
+        </p>
+      </div>
+
+      <div class="career-step">
+        <div class="step-number">02</div>
+        <h3>Build Portfolio</h3>
+        <p>
+          Kerjakan real-world project untuk membangun portfolio 
+          yang siap ditunjukkan ke recruiter.
+        </p>
+      </div>
+
+      <div class="career-step">
+        <div class="step-number">03</div>
+        <h3>Specialization</h3>
+        <p>
+          Pilih jalur karier: AI Engineer, Web Developer, 
+          Data Scientist, atau Mobile Developer.
+        </p>
+      </div>
+
+      <div class="career-step">
+        <div class="step-number">04</div>
+        <h3>Job Preparation</h3>
+        <p>
+          CV review, mock interview, dan simulasi test 
+          teknis perusahaan teknologi.
+        </p>
+      </div>
+
+      <div class="career-step">
+        <div class="step-number">05</div>
+        <h3>Get Hired 🚀</h3>
+        <p>
+          Kami bantu kamu sampai siap melamar dan bekerja 
+          di startup & perusahaan teknologi.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="career-cta">
+      <h3>Mulai perjalanan karirmu hari ini</h3>
+      <button class="btn-glow">🚀 Join Bootcamp Now</button>
+    </div>
+
+  </div>
+</section>
+
+<section id="testimonial" class="testimonial">
+  <div class="testimonial-container">
+    <h2>💬 Success Stories</h2>
+    <p class="testimonial-sub">
+      Alumni kami sudah bekerja di startup & perusahaan teknologi 🚀
+    </p>
+
+    <div class="testimonial-slider">
+      <div class="testimonial-track">
+        <div class="testimonial-card"><div class="student-photo">👨‍💻</div><h3>Rizky Pratama</h3><span class="role">Backend Developer • Fintech</span><p>Mulai dari nol sampai kerja dalam 6 bulan.</p><div class="stars">⭐⭐⭐⭐⭐</div></div>
+        <div class="testimonial-card"><div class="student-photo">👩‍💻</div><h3>Siti Rahma</h3><span class="role">Data Analyst • Startup</span><p>Portfolio project sangat membantu saat interview.</p><div class="stars">⭐⭐⭐⭐⭐</div></div>
+        <div class="testimonial-card"><div class="student-photo">🧑‍💻</div><h3>Andi Saputra</h3><span class="role">AI Engineer • Tech</span><p>Belajar AI dari nol sampai deploy model.</p><div class="stars">⭐⭐⭐⭐⭐</div></div>
+        <div class="testimonial-card"><div class="student-photo">👨‍🎓</div><h3>Budi Santoso</h3><span class="role">Frontend Developer</span><p>Mentor sangat supportif & materinya jelas.</p><div class="stars">⭐⭐⭐⭐⭐</div></div>
+        <div class="testimonial-card"><div class="student-photo">👩‍🎓</div><h3>Dewi Lestari</h3><span class="role">Mobile Developer</span><p>Sekarang bisa publish app sendiri 🚀</p><div class="stars">⭐⭐⭐⭐⭐</div></div>
+        <div class="testimonial-card"><div class="student-photo">👨‍💼</div><h3>Fajar Nugroho</h3><span class="role">Cloud Engineer</span><p>Dapat kerja sebelum lulus bootcamp.</p><div class="stars">⭐⭐⭐⭐⭐</div></div>
+        <div class="testimonial-card"><div class="student-photo">👩‍💼</div><h3>Lisa Putri</h3><span class="role">UI/UX Designer</span><p>Career switching jadi lebih mudah.</p><div class="stars">⭐⭐⭐⭐⭐</div></div>
+        <div class="testimonial-card"><div class="student-photo">🧑‍🎓</div><h3>Rafi Akbar</h3><span class="role">Fullstack Developer</span><p>Materi real project sangat powerful.</p><div class="stars">⭐⭐⭐⭐⭐</div></div>
+        <div class="testimonial-card"><div class="student-photo">👨‍🔬</div><h3>Ican Prasetyo</h3><span class="role">Data Scientist</span><p>Belajar Python & ML jadi menyenangkan.</p><div class="stars">⭐⭐⭐⭐⭐</div></div>
+        <div class="testimonial-card"><div class="student-photo">👩‍🔬</div><h3>Nadia Safira</h3><span class="role">AI Researcher</span><p>Curriculum AI paling lengkap 🔥</p><div class="stars">⭐⭐⭐⭐⭐</div></div>
+        <div class="testimonial-card"><div class="student-photo">👨‍💻</div><h3>Rizky Pratama</h3><span class="role">Backend Developer • Fintech</span><p>Mulai dari nol sampai kerja dalam 6 bulan.</p><div class="stars">⭐⭐⭐⭐⭐</div></div>
+        <div class="testimonial-card"><div class="student-photo">👩‍💻</div><h3>Siti Rahma</h3><span class="role">Data Analyst • Startup</span><p>Portfolio project sangat membantu saat interview.</p><div class="stars">⭐⭐⭐⭐⭐</div></div>
+        <div class="testimonial-card"><div class="student-photo">🧑‍💻</div><h3>Andi Saputra</h3><span class="role">AI Engineer • Tech</span><p>Belajar AI dari nol sampai deploy model.</p><div class="stars">⭐⭐⭐⭐⭐</div></div>
+        <div class="testimonial-card"><div class="student-photo">👨‍🎓</div><h3>Budi Santoso</h3><span class="role">Frontend Developer</span><p>Mentor sangat supportif & materinya jelas.</p><div class="stars">⭐⭐⭐⭐⭐</div></div>
+        <div class="testimonial-card"><div class="student-photo">👩‍🎓</div><h3>Dewi Lestari</h3><span class="role">Mobile Developer</span><p>Sekarang bisa publish app sendiri 🚀</p><div class="stars">⭐⭐⭐⭐⭐</div></div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="cta">
-  <h2>Start Your Coding Journey Today</h2>
-  <button class="btn-clean">
-    🚀 Start Learning
-  </button>
+  <div class="cta-card">
+    <h2>Start Your Coding Journey Today</h2>
+    <p>Belajar dari nol sampai siap kerja di dunia Software & AI 🚀</p>
+
+    <div class="cta-actions">
+      <button class="btn-glow">🚀 Start Learning</button>
+      <button class="btn-outline">See Curriculum</button>
+    </div>
+  </div>
 </section>
 
-<footer>
-  © 2026 AI Coding School
+<footer id="contact" class="footer">
+
+  <div class="footer-container">
+
+    <div class="footer-col brand">
+      <h2>🤖 AI Coding School</h2>
+      <p>Belajar coding & AI dari nol sampai siap kerja 🚀</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">AI Bootcamp</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+  <div class="footer-col">
+  <h4>Social</h4>
+  <ul class="social-links">
+    <li>
+      <a href="https://linkedin.com/in/amsal-pardamean" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i>
+        <span>linkedin.com/in/amsal-pardamean</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="https://github.com/amsalpardamean" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i>
+        <span>github.com/amsalpardamean</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="https://instagram.com/amsalpardamean" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i>
+        <span>instagram.com/amsalpardamean</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li>Email: amsalpardamean@gmail.com</li>
+        <li>WhatsApp: +62 821 1213 7125</li>
+        <li>Jakarta, Indonesia</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 AI Coding School • All rights reserved
+  </div>
+
 </footer>
 
 <div id="chat-toggle">🤖</div>
@@ -103,7 +315,7 @@
   <div id="chat-box" class="chat-box"></div>
 
   <div class="quick-questions" id="quickQuestions">
-  <div class="qq-title">✨ Kamu bisa tanya:</div>
+  <div class="qq-title">✨ Click langsung bisa tanya:</div>
 
   <div class="qq-list">
     <button class="qq-bubble">
@@ -127,5 +339,95 @@
 
 <script src="script.js"></script>
 </div>
+<div id="registerModal" class="modal hidden">
+  <div class="modal-content">
+
+    <div class="modal-header">
+      <h2>🚀 Join AI Coding School</h2>
+      <span id="closeModal">&times;</span>
+    </div>
+
+    <p class="modal-sub">Isi data singkat dan tim kami akan menghubungi kamu ✨</p>
+
+    <form class="register-form">
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Your name" required>
+      </div>
+
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" placeholder="08xxxxxxx" required>
+      </div>
+
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="you@email.com" required>
+      </div>
+
+      <div class="form-group">
+        <label>Program</label>
+        <select required>
+          <option value="">Choose program</option>
+          <option>AI Engineer Bootcamp</option>
+          <option>Fullstack Web Developer</option>
+          <option>Data Science</option>
+          <option>Mobile Developer</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn-submit">Submit Registration</button>
+    </form>
+
+  </div>
+</div>
+  <div id="successModal" class="modal hidden">
+    <div class="success-content">
+      <div class="success-icon">🎉</div>
+      <h2>Registration Received!</h2>
+      <p>
+        Terima kasih sudah mendaftar di <b>AI Coding School</b>.
+        Tim kami akan segera menghubungi kamu melalui email / WhatsApp 📩
+      </p>
+      <button id="closeSuccess" class="btn-primary">Awesome!</button>
+    </div>
+  </div>
+<script>
+
+const registerModal = document.getElementById("registerModal");
+const successModal  = document.getElementById("successModal");
+const closeModalBtn   = document.getElementById("closeModal");
+const closeSuccessBtn = document.getElementById("closeSuccess");
+const openModalButtons = document.querySelectorAll("#openModal, .btn-glow");
+const registerForm = document.querySelector(".register-form");
+
+openModalButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    registerModal.classList.remove("hidden");
+  });
+});
+
+closeModalBtn.addEventListener("click", () => {
+  registerModal.classList.add("hidden");
+});
+
+window.addEventListener("click", (e) => {
+  if (e.target === registerModal) registerModal.classList.add("hidden");
+  if (e.target === successModal) successModal.classList.add("hidden");
+});
+
+registerForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  registerModal.classList.add("hidden");
+  successModal.classList.remove("hidden");
+
+  registerForm.reset();
+});
+
+closeSuccessBtn.addEventListener("click", () => {
+  successModal.classList.add("hidden");
+});
+</script>  
 </body>
 </html>
