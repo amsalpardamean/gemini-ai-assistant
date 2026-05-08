@@ -3,9 +3,9 @@
 Simple backend service for integrating Google Gemini AI using Node.js + Express.
 This project provides API endpoints for:
 
-Text generation from prompts
-Audio → text / AI processing
-Production-ready base structure for extensibility
+Text generation from prompts<br>
+Audio → text / AI processing<br>
+Production-ready base structure for extensibility<br>
 
 ### 📌 Features
 ✨ Text generation endpoint<br>
@@ -22,19 +22,19 @@ Google Generative AI SDK — Gemini integration<br>
 dotenv — Environment configuration<br>
 
 ### ⚙️ Installation
-1️⃣ Clone repository
+1️⃣ Clone repository<br>
 git clone https://github.com/amsalpardamean/gemini-ai-assistant.git<br>
 cd gemini-ai-assistant<br>
 
-2️⃣ Install dependencies
-npm install
+2️⃣ Install dependencies<br>
+npm install<br>
 
-3️⃣ Setup environment
+3️⃣ Setup environment<br>
 Create .env file:<br>
 GEMINI_API_KEY=your_api_key_here<br>
 <br>
-▶️ Run Server
-node index.js
+▶️ Run Server<br>
+node index.js<br>
 
-Server will run at:
+Server will run at:<br>
 http://localhost:3000
