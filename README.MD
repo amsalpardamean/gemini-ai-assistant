@@ -7,21 +7,21 @@ Text generation from prompts
 Audio → text / AI processing
 Production-ready base structure for extensibility
 
-# 📌 Features
+### 📌 Features
 ✨ Text generation endpoint
 🎤 Audio to text / AI processing endpoint
 📦 Simple Express REST API
 🔐 Environment-based configuration
 🧩 Ready for web / chatbot integration
 
-# 🏗️ Tech Stack
+### 🏗️ Tech Stack
 Node.js — Runtime
 Express.js — REST API server
 Multer — File upload handling
 Google Generative AI SDK — Gemini integration
 dotenv — Environment configuration
 
-# ⚙️ Installation
+### ⚙️ Installation
 1️⃣ Clone repository
 git clone https://github.com/amsalpardamean/gemini-ai-assistant.git
 cd gemini-ai-assistant
