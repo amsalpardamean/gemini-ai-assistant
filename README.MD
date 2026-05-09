@@ -3,38 +3,40 @@
 Simple backend service for integrating Google Gemini AI using Node.js + Express.
 This project provides API endpoints for:
 
-Text generation from prompts
-Audio → text / AI processing
-Production-ready base structure for extensibility
+Text generation from prompts<br>
+Audio → text / AI processing<br>
+Production-ready base structure for extensibility<br>
 
-# 📌 Features
-✨ Text generation endpoint
-🎤 Audio to text / AI processing endpoint
-📦 Simple Express REST API
-🔐 Environment-based configuration
-🧩 Ready for web / chatbot integration
+### 🔗 Live Demo: https://gemini-ai-assistant-sigma.vercel.app/
 
-# 🏗️ Tech Stack
-Node.js — Runtime
-Express.js — REST API server
-Multer — File upload handling
-Google Generative AI SDK — Gemini integration
-dotenv — Environment configuration
+### 📌 Features
+✨ Text generation endpoint<br>
+🎤 Audio to text / AI processing endpoint<br>
+📦 Simple Express REST API<br>
+🔐 Environment-based configuration<br>
+🧩 Ready for web / chatbot integration<br>
 
-# ⚙️ Installation
-1️⃣ Clone repository
-git clone https://github.com/amsalpardamean/gemini-ai-assistant.git
-cd gemini-ai-assistant
+### 🏗️ Tech Stack
+Node.js — Runtime<br>
+Express.js — REST API server<br>
+Multer — File upload handling<br>
+Google Generative AI SDK — Gemini integration<br>
+dotenv — Environment configuration<br>
 
-2️⃣ Install dependencies
-npm install
+### ⚙️ Installation
+1️⃣ Clone repository<br>
+git clone https://github.com/amsalpardamean/gemini-ai-assistant.git<br>
+cd gemini-ai-assistant<br>
 
-3️⃣ Setup environment
-Create .env file:
-GEMINI_API_KEY=your_api_key_here
+2️⃣ Install dependencies<br>
+npm install<br>
 
-▶️ Run Server
-node index.js
+3️⃣ Setup environment<br>
+Create .env file:<br>
+GEMINI_API_KEY=your_api_key_here<br>
+<br>
+▶️ Run Server<br>
+node index.js<br>
 
-Server will run at:
+Server will run at:<br>
 http://localhost:3000
