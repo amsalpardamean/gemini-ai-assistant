@@ -413,6 +413,7 @@ footer{
   flex-direction:column;
   gap:10px;
   align-items:stretch;
+  scroll-behavior: smooth;
 }
 
 .message{
@@ -1246,5 +1247,601 @@ section{
   40% {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+.hamburger{
+  display:none;
+  font-size:28px;
+  cursor:pointer;
+  user-select:none;
+}
+
+@media (max-width: 768px){
+
+  .navbar{
+    padding:20px;
+    position:sticky;
+    top:0;
+    z-index:999;
+  }
+
+  .hamburger{
+    display:block;
+  }
+
+  .menu-pill{
+    position:fixed;
+    top:0;
+    right:-100%;
+    width:75%;
+    height:100vh;
+    flex-direction:column;
+    gap:15px;
+    padding:90px 20px;
+    transition:0.3s ease;
+    background:white;
+    box-shadow:-10px 0 30px rgba(0,0,0,0.1);
+    overflow-y:auto;
+    z-index:998;
+  }
+
+  .menu-pill.active{
+    right:0;
+  }
+
+  .menu-pill li{
+    width:100%;
+  }
+
+  .menu-pill li a{
+    display:block;
+    width:100%;
+  }
+
+  body, html{
+    overflow-x:hidden;
+  }
+}
+
+@media (max-width: 768px){
+
+  .hero{
+    height:auto;
+    padding:80px 20px;
+  }
+
+  .hero-text{
+    width:100%;
+    text-align:center;
+  }
+
+  .hero h1{
+    font-size:28px;
+    line-height:1.3;
+    margin-bottom:15px;
+  }
+
+  .hero p{
+    font-size:15px;
+    line-height:1.6;
+    margin-bottom:20px;
+    padding:0 10px;
+  }
+
+  .hero-btns{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    align-items:center;
+  }
+
+  .hero-btns button,
+  .hero-btns a{
+    width:100%;
+    max-width:260px;
+    text-align:center;
+  }
+}
+
+@media (max-width: 768px){
+
+  .features{
+    padding:70px 20px;
+  }
+
+  .features-header h2{
+    font-size:28px;
+  }
+
+  .features-header p{
+    font-size:15px;
+    padding:0 10px;
+  }
+
+  .feature-grid{
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+
+  .feature-card{
+    padding:28px 20px;
+  }
+
+  .feature-card h3{
+    font-size:18px;
+  }
+
+  .feature-card p{
+    font-size:14px;
+  }
+
+  .feature-card .icon{
+    font-size:36px;
+  }
+}
+
+@media (max-width: 768px){
+
+  .courses{
+    padding:80px 20px;
+  }
+
+  .courses-header h2{
+    font-size:28px;
+  }
+
+  .courses-header p{
+    font-size:15px;
+    padding:0 10px;
+  }
+
+  .course-grid{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+  .course-card{
+    padding:26px 20px;
+  }
+
+  .course-card h3{
+    font-size:18px;
+  }
+
+  .course-card .desc{
+    font-size:13px;
+  }
+
+  .course-meta{
+    font-size:12px;
+  }
+
+  .course-btn{
+    font-size:14px;
+    padding:12px;
+  }
+
+  .badge{
+    font-size:11px;
+    padding:5px 10px;
+  }
+}
+
+@media (max-width: 768px){
+
+  .career{
+    padding:80px 20px;
+  }
+
+  .career-header h2{
+    font-size:28px;
+  }
+
+  .career-header p{
+    font-size:15px;
+    padding:0 10px;
+  }
+
+  .career-steps{
+    flex-direction:column;
+    align-items:center;
+    gap:30px;
+  }
+
+  .career-step{
+    width:100%;
+    max-width:320px;
+    text-align:center;
+  }
+
+  .career-steps::before{
+    display:none;
+  }
+
+  .step-number{
+    width:55px;
+    height:55px;
+    font-size:18px;
+  }
+
+  .career-step h3{
+    font-size:18px;
+  }
+
+  .career-step p{
+    font-size:14px;
+  }
+
+  .career-cta h3{
+    font-size:18px;
+  }
+}
+
+@media (max-width: 768px){
+
+  .testimonial{
+    padding:70px 16px;
+  }
+
+  .testimonial h2{
+    font-size:26px;
+  }
+
+  .testimonial-sub{
+    font-size:14px;
+    padding:0 10px;
+  }
+
+  .testimonial-slider{
+    padding:10px 0;
+  }
+
+  .testimonial-card{
+    min-width:240px;
+    padding:18px;
+    border-radius:14px;
+  }
+
+  .student-photo{
+    font-size:36px;
+    margin-bottom:10px;
+  }
+
+  .testimonial-card h3{
+    font-size:16px;
+  }
+
+  .role{
+    font-size:12px;
+  }
+
+  .testimonial-card p{
+    font-size:13px;
+    line-height:1.4;
+  }
+
+  .stars{
+    font-size:14px;
+  }
+}
+
+.hamburger{
+  display:none;
+  font-size:26px;
+  cursor:pointer;
+  color:#4f46e5;
+}
+
+@media (max-width: 768px){
+  .navbar{
+    padding:16px 20px;
+  }
+
+  .hamburger{
+    display:block;
+  }
+
+}
+
+.hamburger{
+  z-index: 1001;
+  position: relative;
+}
+
+.menu-pill{
+  z-index: 1000;
+}
+
+@media (max-width: 768px){
+  .hero{
+    height:auto;
+    padding:80px 20px;
+  }
+
+  .hero h1{
+    font-size:28px;
+    line-height:1.3;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  .hero-btns{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    align-items:center;
+  }
+}
+
+@media (max-width: 1024px){
+  .feature-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media (max-width: 600px){
+  .feature-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media (max-width: 1024px){
+  .course-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media (max-width: 600px){
+  .course-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media (max-width: 900px){
+  .career-steps{
+    flex-direction:column;
+    align-items:center;
+    gap:30px;
+  }
+
+  .career-step{
+    width:100%;
+    text-align:center;
+  }
+
+  .career-steps::before{
+    display:none;
+  }
+}
+
+@media (max-width: 768px){
+  .testimonial-card{
+    min-width:240px;
+    padding:20px;
+  }
+
+  .testimonial h2{
+    font-size:28px;
+  }
+}
+
+@media (max-width: 900px){
+  .footer{
+    padding:40px 20px;
+  }
+
+  .footer-container{
+    grid-template-columns:1fr;
+    text-align:left;
+  }
+
+  .social-links a{
+    width:100%;
+    justify-content:flex-start;
+  }
+}
+
+@media (max-width: 768px){
+
+  #chat-widget{
+    width: 92vw;
+    height: 70vh;
+    right: 4vw;
+    bottom: 90px;
+    border-radius: 18px;
+  }
+
+  #chat-toggle{
+    width: 60px;
+    height: 60px;
+    font-size: 26px;
+    bottom: 18px;
+    right: 18px;
+  }
+
+  .chat-header{
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .chat-box{
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .message{
+    font-size: 13px;
+    padding: 10px 14px;
+  }
+
+  .chat-input input{
+    font-size: 13px;
+    padding: 12px;
+  }
+
+  .chat-input button{
+    padding: 0 16px;
+  }
+} 
+
+#chat-widget{
+  max-width: 420px;
+}
+
+@media (max-width: 768px){
+  #chat-widget{
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+  }
+
+  .chat-box{
+    padding-bottom: 0px;
+  }
+}
+@media (max-width: 768px){
+
+  .quick-questions{
+    max-height: 140px;
+    overflow-y: auto;
+  }
+
+  .qq-title{
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .qq-list{
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+  }
+
+  .qq-bubble{
+    width: 100%;
+    font-size: 12px;
+    padding: 10px 12px;
+    text-align: left;
+    border-radius: 12px;
+    white-space: normal; 
+  }
+}
+
+.quick-questions.hide{
+  display:none;
+}
+
+@media (max-width: 768px){
+
+  .quick-questions{
+    padding: 6px 10px;
+    max-height: 120px;
+    overflow-y: auto;
+    border-top: 1px solid #eee;
+  }
+
+  .qq-title{
+    font-size: 11px;
+    margin-bottom: 6px;
+  }
+
+  .qq-bubble{
+    font-size: 11px;
+    padding: 8px 10px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 768px){
+
+  .modal{
+    padding:16px;
+    align-items:flex-end; 
+  }
+
+  .modal-content{
+    width:100%;
+    max-width:100%;
+    border-radius:18px 18px 0 0;
+    padding:20px 18px 24px;
+    max-height:85vh;
+    overflow-y:auto;
+  }
+
+  .modal-header h2{
+    font-size:18px;
+  }
+
+  .modal-sub{
+    font-size:13px;
+  }
+}
+
+@media (max-width: 768px){
+
+  .form-group label{
+    font-size:12px;
+  }
+
+  .form-group input,
+  .form-group select{
+    font-size:14px;
+    padding:10px;
+    border-radius:10px;
+  }
+
+  .btn-submit{
+    font-size:14px;
+    padding:12px;
+  }
+}
+
+@media (max-width: 768px){
+
+  .success-content{
+    width:100%;
+    max-width:320px;
+    padding:28px 20px;
+    border-radius:18px;
+  }
+
+  .success-icon{
+    font-size:48px;
+  }
+
+  .success-content h2{
+    font-size:18px;
+  }
+
+  .success-content p{
+    font-size:13px;
+  }
+}
+
+@media (max-width: 768px){
+  .modal{
+    backdrop-filter: blur(8px);
+  }
+
+  .modal-content{
+    animation: slideUp .3s ease;
+  }
+
+  @keyframes slideUp{
+    from{
+      transform: translateY(40px);
+      opacity:0;
+    }
+    to{
+      transform: translateY(0);
+      opacity:1;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .logo{
+    font-size:22px;
   }
 }

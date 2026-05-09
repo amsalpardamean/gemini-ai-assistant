@@ -13,7 +13,8 @@
 
 <nav class="navbar">
   <div class="logo">🤖 AI Coding School</div>
-  <ul class="menu-pill">
+  <div class="hamburger" id="hamburger">☰</div>
+  <ul class="menu-pill" id="navMenu">
     <li><a href="#top">Home</a></li>
     <li><a href="#features">Features</a></li>
     <li><a href="#courses">Courses</a></li>
@@ -315,22 +316,22 @@
   <div id="chat-box" class="chat-box"></div>
 
   <div class="quick-questions" id="quickQuestions">
-  <div class="qq-title">✨ Click langsung bisa tanya:</div>
+    <div class="qq-title">✨ Click langsung bisa tanya:</div>
 
-  <div class="qq-list">
-    <button class="qq-bubble">
-      Saya mau belajar coding, mulai dari mana?
-    </button>
+    <div class="qq-list">
+      <button class="qq-bubble">
+        Bagaimana memulai belajar coding?
+      </button>
 
-    <button class="qq-bubble">
-      Bahasa apa yang cocok untuk pemula?
-    </button>
+      <button class="qq-bubble">
+        Bahasa apa yang cocok untuk pemula?
+      </button>
 
-    <button class="qq-bubble">
-      Belajar AI untuk pemula?
-    </button>
+      <button class="qq-bubble">
+        Belajar AI untuk pemula?
+      </button>
+    </div>
   </div>
-</div>
   <form id="chat-form" class="chat-input">
     <input id="user-input" type="text" placeholder="Tanya karir software & AI..." required />
     <button type="submit">Send</button>
@@ -381,17 +382,17 @@
 
   </div>
 </div>
-  <div id="successModal" class="modal hidden">
-    <div class="success-content">
-      <div class="success-icon">🎉</div>
-      <h2>Registration Received!</h2>
-      <p>
-        Terima kasih sudah mendaftar di <b>AI Coding School</b>.
-        Tim kami akan segera menghubungi kamu melalui email / WhatsApp 📩
-      </p>
-      <button id="closeSuccess" class="btn-primary">Awesome!</button>
-    </div>
+<div id="successModal" class="modal hidden">
+  <div class="success-content">
+    <div class="success-icon">🎉</div>
+    <h2>Registration Received!</h2>
+    <p>
+      Terima kasih sudah mendaftar di <b>AI Coding School</b>.
+      Tim kami akan segera menghubungi kamu melalui email / WhatsApp 📩
+    </p>
+    <button id="closeSuccess" class="btn-primary">Awesome!</button>
   </div>
+</div>
 <script>
 
 const registerModal = document.getElementById("registerModal");
